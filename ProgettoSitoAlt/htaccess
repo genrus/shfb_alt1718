@@ -1,0 +1,20 @@
+RewriteEngine on
+Options -Multiviews
+RewriteBase /
+RewriteRule ^azienda\.html$ /index.php?page=1 [L]
+RewriteRule ^contatti\.html$ /index.php?page=7 [L]
+RewriteRule ^offerte\.html$ /index.php?page=11 [L]
+RewriteRule ^servizi\.html$ /index.php?page=10 [L]
+RewriteRule ^auto-(.+)\.php$ index.php?page=8&idProdotto=$1 [L]
+RewriteRule ^dettaglio-auto-(.+)\.php$ index.php?page=9&idProdotto=$1 [L]
+RewriteRule ^preventivo-auto-(.+)\.php$ index.php?page=13&idProdotto=$1 [L]
+RewriteRule ^richista_preventivo\.php$ index.php?page=13 [L]
+RewriteRule ^nuovo\.php$ /index.php?page=2 [L]
+RewriteRule ^usato\.php$ /index.php?page=3 [L]
+RewriteRule ^noleggio\.php$ /index.php?page=4 [L]
+RewriteRule ^blog\.php$ /index.php?page=6 [L]
+RewriteRule ^privacy\.php$ /index.php?page=12 [L]
+RewriteRule ^preventivo-noleggio\.php$ /index.php?page=17 [L]
+RewriteRule ^usato-(.+)\.php$ index.php?page=3&pag=$1 [L]
+RewriteRule ^nuovo-(.+)\.php$ index.php?page=2&pagi=$1 [L]
+RewriteRule ^noleggio-(.+)\.php$ index.php?page=4&pag=$1 [L]
